@@ -1,6 +1,6 @@
 class Solution {
     fun removeDuplicates(nums: IntArray): Int {
-        val nonDuplicatedNumber = mutableListOf<Int>()
+        val nonDuplicatedNumber = hashSetOf<Int>()
 
         for (i in nums.indices) {
             if (!nonDuplicatedNumber.contains(nums[i])) {
