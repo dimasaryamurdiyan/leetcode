@@ -1,20 +1,17 @@
 class Solution {
     fun fizzBuzz(n: Int): List<String> {
-        val output = mutableListOf<String>()
+        val result = mutableListOf<String>()
         for (i in 1..n) {
-            if (i.isDivisibleBy(3) && i.isDivisibleBy(5)) {
-                output.add("FizzBuzz")
-            } else if (i.isDivisibleBy(3)) {
-                output.add("Fizz")
-            } else if (i.isDivisibleBy(5)) {
-                output.add("Buzz")
-            } else {
-                output.add("${i}")
+            val divisibleBy3 = i % 3 == 0
+            val divisibleBy5 = i % 5 == 0
+            
+            when {
+                divisibleBy3 && divisibleBy5 -> result.add("FizzBuzz")
+                divisibleBy3 -> result.add("Fizz")
+                divisibleBy5 -> result.add("Buzz")
+                else -> result.add(i.toString())
             }
         }
-
-        return output.toList()
+        return result
     }
-
-    fun Int.isDivisibleBy(x: Int) = this % x == 0
 }
