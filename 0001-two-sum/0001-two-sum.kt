@@ -5,8 +5,7 @@ class Solution {
         for (i in nums.indices) {
             val checkDiff = target - nums[i]
             if (hash.containsKey(checkDiff)) {
-                val output = intArrayOf(hash.get(checkDiff) ?: -1, i)
-                return output
+                return intArrayOf(hash.get(checkDiff) ?: -1, i)
             }
             hash.put(nums[i], i)
         }
