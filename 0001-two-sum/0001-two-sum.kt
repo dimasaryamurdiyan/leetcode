@@ -1,17 +1,15 @@
 class Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {
         var output = IntArray(2)
-        var seen = mutableMapOf<Int, Int>()
+        val hash = hashMapOf<Int, Int>()
 
-        for(i in nums.indices) {
-            val diff2 = target - nums[i]
-            if (seen.containsKey(diff2)) {
-                output.set(0, seen.getValue(diff2))
-                output.set(1, i)
+        for (i in nums.indices) {
+            val checkDiff = target - nums[i]
+            if (hash.containsKey(checkDiff)) {
+                output = intArrayOf(hash.get(checkDiff) ?: -1, i)
                 return output
             }
-            
-            seen[nums[i]] = i
+            hash.put(nums[i], i)
         }
 
         return output
