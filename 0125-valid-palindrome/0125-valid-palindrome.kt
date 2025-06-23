@@ -7,7 +7,7 @@ class Solution {
         var right = phrase.length-1
 
         while (left < right) {
-            if (!phrase[left].equals(phrase[right])) {
+            if (phrase[left] != phrase[right]) {
                 return false
             }
             left++
