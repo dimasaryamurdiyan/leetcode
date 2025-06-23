@@ -1,9 +1,9 @@
 class Solution {
     fun intToRoman(num: Int): String {
-        val ones = listOf("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX")
-        val tens = listOf("", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC")
-        val hundreds = listOf("", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM")
-        val thousands = listOf("", "M", "MM", "MMM")
+        val ones = arrayOf("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX")
+        val tens = arrayOf("", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC")
+        val hundreds = arrayOf("", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM")
+        val thousands = arrayOf("", "M", "MM", "MMM")
 
         val builder = StringBuilder()
 
