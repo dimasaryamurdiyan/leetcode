@@ -1,11 +1,17 @@
 class Solution {
     fun intToRoman(num: Int): String {
-        var number = num
-        val thousands = arrayOf("", "M", "MM", "MMM")
-        val hundreds = arrayOf("", "C","CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM")
-        val tens = arrayOf("", "X", "XX", "XXX", "XL", "L","LX", "LXX", "LXXX", "XC")
-        val units = arrayOf("", "I","II","III", "IV","V", "VI", "VII", "VIII", "IX")
+        val ones = listOf("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX")
+        val tens = listOf("", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC")
+        val hundreds = listOf<String>("", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM")
+        val thousands = listOf<String>("", "M", "MM", "MMM")
 
-        return thousands[num / 1000] + hundreds[(num % 1000) / 100] + tens[(num % 100) / 10] + units[num % 10]
+        val builder = StringBuilder()
+
+        builder.append(thousands[num / 1000])
+        builder.append(hundreds[(num % 1000) / 100])
+        builder.append(tens[(num % 100) / 10])
+        builder.append(ones[num % 10])
+
+        return builder.toString()
     }
 }
