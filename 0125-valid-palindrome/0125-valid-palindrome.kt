@@ -4,18 +4,16 @@ class Solution {
 
         val phrase = s.filter { it.isLetterOrDigit() }.lowercase()
         var left = 0
-        var size = phrase.length-1
+        var right = phrase.length-1
 
-        for(left in phrase.indices) {
-            println("${phrase[left]}, ${phrase[size-left]}")
-            if (phrase[left] == phrase[size-left]) {
-                continue
-            } else {
+        while (left < right) {
+            if (!phrase[left].equals(phrase[right])) {
                 return false
             }
+            left++
+            right--
         }
 
-    
         return true
     }
 }
