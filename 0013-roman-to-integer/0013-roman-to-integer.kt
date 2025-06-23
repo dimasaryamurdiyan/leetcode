@@ -1,12 +1,10 @@
 class Solution {
     fun romanToInt(s: String): Int {
-        //reverse input for compute roman numeral
-        var reversedString = s.reversed()
         var temp = 0
         var result = 0
-        
     
-        for (char in reversedString) {
+        for (i in s.length-1 downTo 0) {
+            val char = s[i]
             var currentValue = 0
             when (char) {
                 'I' -> currentValue = 1
