@@ -1,14 +1,13 @@
 class Solution {
     fun removeDuplicates(nums: IntArray): Int {
-        val nonDuplicatedNumber = hashSetOf<Int>()
-
-        for (i in nums.indices) {
-            if (!nonDuplicatedNumber.contains(nums[i])) {
-                nums[nonDuplicatedNumber.size] = nums[i]
-                nonDuplicatedNumber.add(nums[i])
-            } 
+        var j = 1
+        for (i in 1..nums.size-1) {
+            if (nums[i] != nums[j-1]) {
+                nums[j] = nums[i]
+                j++
+            }
         }
 
-        return nonDuplicatedNumber.size
+        return j
     }
 }
