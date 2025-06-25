@@ -1,15 +1,15 @@
 class Solution {
     fun containsDuplicate(nums: IntArray): Boolean {
-        //save the num into hashset
-        val sets = hashSetOf<Int>();
+        val hash = hashMapOf<Int, Int>()
 
-        for(i in nums.indices){
-            //iteration check number in hashet
-            if(sets.contains(nums[i])) {
+        for (i in nums.indices) {
+            hash.put(nums[i], 1 + hash.getOrDefault(nums[i], 0))
+
+            if (hash.get(nums[i]) ?: -1 > 1) {
                 return true
-            }
-            sets.add(nums[i])
+            } 
         }
+
         return false
     }
 }
