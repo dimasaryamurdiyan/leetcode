@@ -3,13 +3,15 @@ class Solution {
         if (strs.isEmpty()) return ""
 
         val shortestString = strs.minByOrNull { it.length }!!
-
+        val builder = StringBuilder()
         for (i in shortestString.indices) {
             if (strs.any { it[i] != shortestString[i] }) {
-                return shortestString.substring(0, i)
+                return builder.toString()
+            } else {
+                builder.append(shortestString[i])
             }
         }
 
-        return shortestString
+        return builder.toString()
     }
 }
