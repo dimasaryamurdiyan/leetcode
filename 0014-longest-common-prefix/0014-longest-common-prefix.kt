@@ -4,10 +4,9 @@ class Solution {
 
         val shortestString = strs.minByOrNull { it.length }!!
 
-        for (index in shortestString.indices) {
-            val currentChar = shortestString[index]
-            if (strs.any { it[index] != currentChar }) {
-                return shortestString.substring(0, index)
+        for (i in shortestString.indices) {
+            if (strs.any { it[i] != shortestString[i] }) {
+                return shortestString.substring(0, i)
             }
         }
 
