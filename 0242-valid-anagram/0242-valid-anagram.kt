@@ -10,6 +10,6 @@ class Solution {
             countCharT.put(t[i], 1 + countCharT.getOrDefault(t[i], 0))
         }
 
-        return countCharS == countCharT
+        return countCharS.equals(countCharT)
     }
 }
