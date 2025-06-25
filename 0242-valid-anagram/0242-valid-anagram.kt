@@ -2,14 +2,25 @@ class Solution {
     fun isAnagram(s: String, t: String): Boolean {
         if (s.length != t.length) return false
 
-        val countCharS = hashMapOf<Char, Int>()
-        val countCharT = hashMapOf<Char, Int>()
-
-        for (i in s.indices) {
-            countCharS.put(s[i], 1 + countCharS.getOrDefault(s[i], 0))
-            countCharT.put(t[i], 1 + countCharT.getOrDefault(t[i], 0))
+        val tempChar = hashMapOf<Char, Int>()
+        for (char in s) {
+            tempChar.put(char, 1 + tempChar.getOrDefault(char, 0))
         }
 
-        return countCharS.equals(countCharT)
+        for (char in t) {
+            if (!tempChar.contains(char)) {
+                return false
+            } else {
+                if (tempChar.get(char) != null) {
+                    tempChar.put(char, tempChar.getOrDefault(char, 0) - 1)
+                }
+
+                if (tempChar.get(char) == 0) {
+                    tempChar.remove(char)
+                }
+            }
+        }
+
+        return tempChar.isEmpty()
     }
 }
