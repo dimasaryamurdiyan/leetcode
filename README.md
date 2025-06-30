@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0189-rotate-array) |
 | [0217-contains-duplicate](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0217-contains-duplicate) |
+| [0347-top-k-frequent-elements](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0347-top-k-frequent-elements) |
 ## Hash Table
 |  |
 | ------- |
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0242-valid-anagram) |
+| [0347-top-k-frequent-elements](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0383-ransom-note) |
 ## Math
 |  |
@@ -94,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0242-valid-anagram) |
+| [0347-top-k-frequent-elements](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0347-top-k-frequent-elements) |
 ## Sliding Window
 |  |
 | ------- |
@@ -106,10 +109,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0169-majority-element) |
+| [0347-top-k-frequent-elements](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0347-top-k-frequent-elements) |
 ## Counting
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0169-majority-element) |
+| [0347-top-k-frequent-elements](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0383-ransom-note) |
 ## Greedy
 |  |
@@ -119,4 +124,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0347-top-k-frequent-elements) |
+## Bucket Sort
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0347-top-k-frequent-elements) |
+## Quickselect
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0347-top-k-frequent-elements) |
 <!---LeetCode Topics End-->
