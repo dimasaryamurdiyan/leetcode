@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0169-majority-element](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0242-valid-anagram) |
+| [0290-word-pattern](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0290-word-pattern) |
 | [0347-top-k-frequent-elements](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0383-ransom-note) |
 ## Math
@@ -53,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0058-length-of-last-word](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0058-length-of-last-word) |
 | [0125-valid-palindrome](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0242-valid-anagram) |
+| [0290-word-pattern](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0290-word-pattern) |
 | [0383-ransom-note](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0392-is-subsequence) |
 | [0412-fizz-buzz](https://github.com/dimasaryamurdiyan/leetcode/tree/master/0412-fizz-buzz) |
