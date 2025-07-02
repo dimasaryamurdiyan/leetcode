@@ -3,8 +3,8 @@ class Solution {
         val hash = hashMapOf<Char, Char>()
 
         for (i in s.indices) {
-            if (hash.get(s[i]) != null) {
-                if (hash.get(s[i]) != t[i]) return false
+            if (hash.containsKey(s[i])) {
+                if (hash[s[i]] != t[i]) return false
             } else {
                 if (hash.containsValue(t[i])) return false 
             }
