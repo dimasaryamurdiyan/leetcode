@@ -4,9 +4,9 @@ class Solution {
 
         for (i in s.indices) {
             if (hash.containsKey(s[i])) {
-                if (hash[s[i]] != t[i]) return false
-            } else {
-                if (hash.containsValue(t[i])) return false 
+                if (hash.get(s[i]) != t[i]) return false
+            } else if (hash.containsValue(t[i])) {
+                return false 
             }
 
             hash.put(s[i], t[i])
