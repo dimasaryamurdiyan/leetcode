@@ -1,38 +1,35 @@
 class Solution {
     fun summaryRanges(nums: IntArray): List<String> {
-        val list = mutableListOf<String>()
-        var j = 0
-        var count = 0
-
         if (nums.size == 1) {
             return listOf("${nums[0]}")
         }
+        
+        val result = mutableListOf<String>()
+        var start = 0
+        var count = 0
 
-        for (i in 1..nums.size-1) {
-            if (nums[i] - nums[i-1] != 1) {
+        for (i in 1 until nums.size) {
+            if (nums[i] - nums[i - 1] != 1) {
                 if (count > 0) {
-                    list.add("${nums[j]}->${nums[i-1]}")
+                    result.add("${nums[start]}->${nums[i - 1]}")
                 } else {
-                    list.add(nums[j].toString())
+                    result.add(nums[start].toString())
                 }
-                
-                j = i
+                start = i
                 count = 0
             } else {
                 count++
             }
 
-            println("$j $i, $count ${nums.size-1}")
-            if (i == nums.size-1) {
+            if (i == nums.size - 1) {
                 if (count > 0) {
-                    list.add("${nums[j]}->${nums[i]}")
+                    result.add("${nums[start]}->${nums[i]}")
                 } else {
-                    list.add(nums[j].toString())
+                    result.add(nums[start].toString())
                 }
             }
-              
         }
 
-        return list
+        return result
     }
 }
